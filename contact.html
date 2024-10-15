@@ -19,13 +19,36 @@
 <main>
     <h1>Contact</h1>
     <!--
-    In contact.html, create a contact form with the following fields:
-    For now, just add a heading to your contact page. We'll add more
-    to this page in the next lab.
+    Name
+    Email address
+    Reason for contact (drop down menu): saying hi, looking for a contractor, interested in an interview
+    Textarea for open comment
+    Submit button
+    Your form does not need to submit anywhere, just make sure your markup is valid and sound
     -->
     <h2>Under Construction</h2>
     <form>
-        <label for="email">Email:</label><input type="email" name="email" id="email">
+        <p>
+            <label for="username">Name:</label>
+            <input type="text" name="username" id="username">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label for="reason">Reason for contact:</label>
+            <select id="reason" name="reason">
+                <option value="hi">Just saying hi</option>
+                <option value="contractor">Looking for contractor</option>
+                <option value="interview">Interested in an interview</option>
+            </select>
+        </p>
+        <p>
+            <label for="comment">Comments:</label><br>
+            <textarea id="comment"></textarea>
+        </p>
+        <button type="submit">Submit</button>
     </form>
 </main>
 
