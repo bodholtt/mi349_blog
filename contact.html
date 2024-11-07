@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <title>Contact | Blog</title>
 </head>
 <body>
 
 <header>
-    <p>Blog</p>
+    <p><a href="/" id="sitetitle">Tim's Blog for MI349</a></p>
     <nav>
         <a title="Home" href="index.html">Home</a>
-        <a title="Home" href="about.html">About</a>
-        <a title="Home" href="contact.html">Contact</a>
+        <a title="About" href="about.html">About</a>
+        <a title="Contact" href="contact.html">Contact</a>
     </nav>
 </header>
 
 <main>
-    <h1>Contact</h1>
-    <!--
-    Name
-    Email address
-    Reason for contact (drop down menu): saying hi, looking for a contractor, interested in an interview
-    Textarea for open comment
-    Submit button
-    Your form does not need to submit anywhere, just make sure your markup is valid and sound
-    -->
-    <h2>Under Construction</h2>
-    <form>
+    <h1 id="pagetitle">Contact</h1>
+    <form id="contact-form">
         <p>
             <label for="username">Name:</label>
             <input type="text" name="username" id="username">
@@ -45,7 +37,9 @@
             </select>
         </p>
         <p>
-            <label for="comment">Comments:</label><br>
+            <label for="comment">Comments:</label>
+        </p>
+        <p>
             <textarea id="comment"></textarea>
         </p>
         <button type="submit">Submit</button>

@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <title>About | Blog</title>
 </head>
 <body>
 
 <header>
-    <p>Blog</p>
+    <p><a href="/" id="sitetitle">Tim's Blog for MI349</a></p>
     <nav>
         <a title="Home" href="index.html">Home</a>
-        <a title="Home" href="about.html">About</a>
-        <a title="Home" href="contact.html">Contact</a>
+        <a title="About" href="about.html">About</a>
+        <a title="Contact" href="contact.html">Contact</a>
     </nav>
 </header>
 
 <main>
-    <h1>About</h1>
-    <!--
-    The about.html file should include a bio of the author (you)
-    The bio should include paragraphs, at least one list, and one image
-    -->
-    <section>
+    <h1 id="pagetitle">About Me</h1>
+    <section class="about">
+
+        <div>
+            <p>I'm a student at Michigan State University, studying for a bachelor's in Computer Science and a minor in Information Technology.
+                I'm aiming for a career in IT. I would like to pursue a job in web development, but the modern software engineering industry
+                puts me off. Nevertheless, I enjoy it as a hobby and would like to continue learning about it, especially in the case an
+                opportunity ever arises.
+            </p>
+            <h2>My favorite programming languages</h2>
+            <ul>
+                <li>Go</li>
+                <li>C++</li>
+                <li>Javascript</li>
+            </ul>
+            <p>This website was created for MI349 at MSU, as part of my IT Minor.</p>
+        </div>
+
+    <div class="abouttheauthor">
         <address>
             <span>Tim Bodholt</span><br>
             <a href="https://bodholtt.im">website</a>
@@ -31,20 +45,9 @@
             <img src="https://media.licdn.com/dms/image/v2/D5603AQG54F8WO2Q3lA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1690498282143?e=1733961600&v=beta&t=iZXxqxO1DdR6yI6UflpkYCmGc6AeTShDeZBzMQMlWiA" alt="tim">
             <figcaption>Tim</figcaption>
         </figure>
-        <h2>About Me</h2>
-        <p>I'm a student at Michigan State University, studying for a bachelor's in Computer Science and a minor in Information Technology.
-            I'm aiming for a career in IT. I would like to pursue a job in web development, but the modern software engineering industry
-            puts me off. Nevertheless, I enjoy it as a hobby and would like to continue learning about it, especially in the case an
-            opportunity ever arises.
-        </p>
-        <h2>My favorite programming languages</h2>
-        <ul>
-            <li>Go</li>
-            <li>C++</li>
-            <li>Javascript</li>
-        </ul>
-        <p>This website was created for MI349 at MSU, as part of my IT Minor.</p>
+    </div>
     </section>
+
 </main>
 
 </body>

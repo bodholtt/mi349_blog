@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <title>Home | Blog</title>
 </head>
 <body>
 
 <header>
-    <p>Blog</p>
+    <p><a href="/" id="sitetitle">Tim's Blog for MI349</a></p>
     <nav>
         <a title="Home" href="index.html">Home</a>
-        <a title="Home" href="about.html">About</a>
-        <a title="Home" href="contact.html">Contact</a>
+        <a title="About" href="about.html">About</a>
+        <a title="Contact" href="contact.html">Contact</a>
     </nav>
 </header>
 
 <main>
-    <h1>Home</h1>
-    <!--
-    The index.html file should include two original blog posts (on any topic you'd like).
-    Each blog post should be at least 200 words and contain 1 image,
-     a title, a published date, and author
-    -->
-    <section>
-        <h2>Blog</h2>
-        <article>
-            <h3>Development tools</h3>
-            <time datetime="2024-10-08T13:30:00">October 8th, 2024, 1:30PM</time>
-            <address>
-                Author: <a rel="author" href="https://bodholtt.im">Tim Bodholt</a>
-            </address>
-            <p>For development, I have a lot of tools that I like to use that make it easier for me to work on projects.</p>
+    <h1 id="pagetitle">Home</h1>
+    <div class="columns">
+        <article class="blogpost">
+            <div class="blogheader">
+                <div>
+                    <h2>Development tools</h2>
+                    <p class="postdescription">The various programs and hardware that I use for development.</p>
+                </div>
+                <div class="blogheader-r">
+                    <time datetime="2024-10-08T13:30:00">October 8th, 2024, 1:30PM</time>
+                    <address>
+                        Author: <a rel="author" href="https://bodholtt.im">Tim Bodholt</a>
+                    </address>
+                </div>
+            </div>
             <section>
-                <h4>Coding</h4>
+                <h3>Coding</h3>
                 <p>I like to use JetBrains IDEs for developing. CLion, WebStorm, and GoLand are the ones I use most often.
                     I currently run Windows on my computer, so I prefer to use Windows + WSL to build programs.
                     I'm comfortable using Linux, but it's not what I daily drive.</p>
@@ -41,54 +42,78 @@
                     of life features I miss in VSCode. However, remote development is far better in cases where I need to
                     work on code directly on a remote server and not a local environment.</p>
             </section>
-            <section>
-                <h4>Environments</h4>
-                <p>My main environment is my laptop, which is running Windows. I do most of my development here.
-                    However, I have two virtual machines that I remote into for a development environment I can reach anywhere.
-                    One runs Windows 11 and the other runs Fedora Linux, and both are equipped with my necessary development tools.</p>
-                <p>These virtual machines are hosted on a computer I built to use as a server. It's located in my apartment.
-                    The server also hosts a container with databases that I use as a development database server.</p>
+            <div class="columns">
                 <figure>
                     <img src="images/server.jpg" alt="Server">
                     <figcaption>My server</figcaption>
                 </figure>
-            </section>
-            <section>
-                <h4>Services</h4>
-                <p>For version control, I generally use GitHub. Sometimes I use the MSU-hosted GitLab for certain projects.</p>
-                <p>For website domains and hosting, I like to use Cloudflare.
-                    I also use Cloudflare to expose some self-hosted web apps to the internet so I can access them from anywhere.
-                    An example is CyberChef, which is a web app that has lots of general tools for development such as hashing,
-                    random generators, format encoding/decoding, and more.</p>
-            </section>
+                <div>
+                    <section>
+                    <h3>Environments</h3>
+                    <p>My main environment is my laptop, which is running Windows. I do most of my development here.
+                        However, I have two virtual machines that I remote into for a development environment I can reach anywhere.
+                        One runs Windows 11 and the other runs Fedora Linux, and both are equipped with my necessary development tools.</p>
+                    <p>These virtual machines are hosted on a computer I built to use as a server. It's located in my apartment.
+                        The server also hosts a container with databases that I use as a development database server.</p>
+                    </section>
+                    <section>
+                        <h3>Services</h3>
+                        <p>For version control, I generally use GitHub. Sometimes I use the MSU-hosted GitLab for certain projects.</p>
+                        <p>For website domains and hosting, I like to use Cloudflare.
+                            I also use Cloudflare to expose some self-hosted web apps to the internet so I can access them from anywhere.
+                            An example is CyberChef, which is a web app that has lots of general tools for development such as hashing,
+                            random generators, format encoding/decoding, and more.</p>
+                    </section>
+                </div>
+            </div>
         </article>
-        <hr>
-        <article>
-            <h3>Weekly routine</h3>
-            <time datetime="2024-10-07T13:30:00">October 7th, 2024, 1:30PM</time>
-            <address>
-                Author: <a rel="author" href="https://bodholtt.im">Tim Bodholt</a>
-            </address>
-            <p>Every Sunday, I decide on a recipe to make for my weekly meal prep. Then, I walk to the store to buy the ingredients.
-                I wait until later to start cooking, usually around 6:00-7:00.
-                In the meantime, I either work on homework, play guitar, or play video games.</p>
-            <p>On Monday, I get up around 8:30 to get ready for my first class at 10:20.
-                After that class, I return to my apartment for 15 or so minutes to eat lunch.
-                Then, I pack a meal and drop it off at work and go to the STEM building for my next class.
-                After that second class, I go to work from 2:00-9:00. When I get home, I do a light workout for about an hour.</p>
-            <figure>
-                <img src="https://media1.tenor.com/m/02mzV1x4xKcAAAAC/mondays-garfield.gif" alt="Garfield">
-                <figcaption>Garfield on Monday morning</figcaption>
-            </figure>
-            <p>On Tuesday, I get up early again and get ready for the 40-minute walk to my class in the Veterinary Medical center.
-                After that class, I have about three hours of time that I can use to work on homework, which I usually go to a computer lab to do.
-                Then, I have my Plant Biology lab class from 3:00-5:50. Right after that, I have my Web Design and Development class from 6:00-7:50.
-                After that class, I return home and do another light workout.</p>
-            <p>My Wednesday schedule is entirely the same as my Monday schedule.</p>
-            <p>On Thursday, I have the same morning walk, first class, and three hours of free time.
-                I'm scheduled to work from 3:00-9:00, but I come in early if I don't need to use the free time to get work done.</p>
-            <p>Fridays are mostly free for me. I am scheduled to work 11:00-5:00, but afterwards I have no classes so I spend the time relaxing.</p>
-            <p>Saturdays are entirely free, so I try to get work done and relax.</p>
+        <article class="blogpost">
+            <div class="blogheader">
+                <div>
+                    <h2>Weekly routine</h2>
+                    <p class="postdescription">My routine that I follow every week.</p>
+                </div>
+                <div class="blogheader-r">
+                    <time datetime="2024-10-07T13:30:00">October 7th, 2024, 1:30PM</time>
+                    <address>
+                        Author: <a rel="author" href="https://bodholtt.im">Tim Bodholt</a>
+                    </address>
+                </div>
+            </div>
+
+            <section>
+                <div class="columns">
+                    <div>
+                        <h3>Sunday</h3>
+                        <p>Every Sunday, I decide on a recipe to make for my weekly meal prep. Then, I walk to the store to buy the ingredients.
+                            I wait until later to start cooking, usually around 6:00-7:00.
+                            In the meantime, I either work on homework, play guitar, or play video games.</p>
+                        <h3>Monday</h3>
+                        <p>On Monday, I get up around 8:30 to get ready for my first class at 10:20.
+                            After that class, I return to my apartment for 15 or so minutes to eat lunch.
+                            Then, I pack a meal and drop it off at work and go to the STEM building for my next class.
+                            After that second class, I go to work from 2:00-9:00. When I get home, I do a light workout for about an hour.</p>
+                    </div>
+                    <figure>
+                        <img src="https://media1.tenor.com/m/02mzV1x4xKcAAAAC/mondays-garfield.gif" alt="Garfield">
+                        <figcaption>Garfield on Monday morning</figcaption>
+                    </figure>
+                </div>
+                <h3>Tuesday</h3>
+                <p>On Tuesday, I get up early again and get ready for the 40-minute walk to my class in the Veterinary Medical center.
+                    After that class, I have about three hours of time that I can use to work on homework, which I usually go to a computer lab to do.
+                    Then, I have my Plant Biology lab class from 3:00-5:50. Right after that, I have my Web Design and Development class from 6:00-7:50.
+                    After that class, I return home and do another light workout.</p>
+                <h3>Wednesday</h3>
+                <p>My Wednesday schedule is entirely the same as my Monday schedule.</p>
+                <h3>Thursday</h3>
+                <p>On Thursday, I have the same morning walk, first class, and three hours of free time.
+                    I'm scheduled to work from 3:00-9:00, but I come in early if I don't need to use the free time to get work done.</p>
+                <h3>Friday</h3>
+                <p>Fridays are mostly free for me. I am scheduled to work 11:00-5:00, but afterwards I have no classes so I spend the time relaxing.</p>
+                <h3>Saturday</h3>
+                <p>Saturdays are entirely free, so I try to get work done and relax.</p>
+            </section>
 
             <table>
                 <tr>
@@ -133,17 +158,21 @@
                 </tr>
             </table>
         </article>
-    </section>
-    <section>
-        <h2>Sign up for the newsletter</h2>
-        <form>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
+    </div>
 </main>
+
+<hr>
+
+<section class="newsletter">
+    <h2>Newsletter</h2>
+    <form id="newsletter-form">
+        <p>Sign up for the newsletter</p>
+        <label for="newsletter-email">Email:</label>
+        <input type="email" name="email" id="newsletter-email">
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
 
 </body>
 </html>
